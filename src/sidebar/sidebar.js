@@ -1,79 +1,57 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './sidebar.css';
-import { Sidebar, Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClipboardList, faCog, faHouse, faRightFromBracket, faUser } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./sidebar.css";
 
-function Sidebarsuccess() {
-  const { collapseSidebar } = useProSidebar();
-
+function Sidebar() {
   return (
-    <div className='sidebar'>
-      <Sidebar>
-        <div className='Header'>
-          <div className='Profile-img'>
-            <img src='https://i.postimg.cc/4N9HLCG3/black-user-member-guest-icon-31634946589seopngzc1t.png'>
-            </img>
-            <span className='Profile-Name'>
-              Guest
-            </span>
-          </div>
-        </div>
-
-        <div className='sidebar-content'>
-          <Menu className='lists'>
-              <li className='menu-items'>
-                <MenuItem>
-                  <a href='#' className ='nav-link'>
-                    <FontAwesomeIcon className='icon' icon={faHouse}></FontAwesomeIcon>
-                    <span className='link'>Home</span>
-                  </a>
-                </MenuItem>
-              </li>
-
-              <li className='menu-items'>
-                <MenuItem>
-                  <a href='#' className ='nav-link'>
-                    <FontAwesomeIcon className='icon' icon={faClipboardList}></FontAwesomeIcon>
-                    <span className='link'>Payment status</span>
-                  </a>
-                </MenuItem>
-              </li>
-
-              <li className='menu-items'>
-                <MenuItem>
-                  <a href='#' className ='nav-link'>
-                    <FontAwesomeIcon className='icon' icon={faUser}></FontAwesomeIcon>
-                    <span className='link'>Profile</span>
-                  </a>
-                </MenuItem>
-              </li>
-          </Menu>
-        </div>
-
-          <Menu className=''>
-              <div className='bottom-content'>
-                <li className='menu-items'>
-                    <MenuItem>
-                      <a href='#' className ='nav-link'>
-                        <FontAwesomeIcon className='icon' icon={faCog}></FontAwesomeIcon>
-                        <span className='link'>Settings</span>
-                      </a>
-                    </MenuItem>
-                  </li>
-                <li className='menu-items'>
-                    <MenuItem>
-                      <a href='#' className ='nav-link'>
-                        <FontAwesomeIcon className='icon' icon={faRightFromBracket}></FontAwesomeIcon>
-                        <span className='link'>Logout</span>
-                      </a>
-                  </MenuItem>
-                </li>
+    <div class="sidebar">
+      <nav class="main-menu">
+        <ul>
+          <li>
+            <div className="Header">
+              <div className="Profile">
+                <img src="https://i.postimg.cc/4N9HLCG3/black-user-member-guest-icon-31634946589seopngzc1t.png"></img>
+                <div className="Name">
+                  <span className="nav-text">Guest</span>
+                  <span className="email">example@example.com</span>
+                </div>
               </div>
-          </Menu>
-      </Sidebar>
+            </div>
+            <a href="#">
+              <i class="fa fa-home fa-2x"></i>
+              <span className="nav-text">Home</span>
+            </a>
+          </li>
+          <li>
+          <a href="#">
+              <i class="fa fa-light fa-list"></i>
+              <span className="nav-text">Payments Status</span>
+            </a>
+          </li>
+          <li>
+          <a href="#">
+              <i class="fa fa-regular fa-user"></i>
+              <span className="nav-text">Profile</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="logout">
+          <li>
+            <a href="#">
+              <i class="fa fa-regular fa-gear"></i>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-power-off fa-2x"></i>
+              <span class="nav-text">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
-export default Sidebarsuccess
+export default Sidebar;

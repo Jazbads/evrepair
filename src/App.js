@@ -1,15 +1,19 @@
-import './App.css';
-import Sidebar from './sidebar/sidebar';
-import { ProSidebarProvider } from 'react-pro-sidebar';
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link, Routes } from "react-router-dom";
+import ErrorPage from "./error-page";
+import Sidebar from "./sidebar/sidebar";
 
 
 function App() {
   return (
-   <div className='App'>
-      <ProSidebarProvider>
-        <Sidebar/>
-      </ProSidebarProvider>;
-   </div>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/sidebar" element={<Sidebar />}/>
+          <Route path="*" element={<ErrorPage />}/>
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
