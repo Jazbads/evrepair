@@ -1,9 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./sidebarowner.css";
+import "./Sidebarowner.css";
 import { Icon } from '@iconify/react';
 
-function sidebarowner() {
+function Sidebarowner() {
   return (
     <div class="sidebar">
       <nav class="main-menu">
@@ -61,4 +61,4 @@ function sidebarowner() {
     </div>
   );
 }
-export default sidebarowner;
+export default Sidebarowner;

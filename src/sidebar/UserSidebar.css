@@ -1,0 +1,179 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa {
+    margin-left: 8px;
+}
+
+
+.main-menu:hover,
+nav.main-menu.expanded {
+    width: 250px;
+    overflow: visible;
+}
+
+.main-menu {
+    background: #ffffff;
+    border-right: 1px solid #b8b8b8;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    width: 60px;
+    overflow: hidden;
+    -webkit-transition: width .25s linear;
+    transition: width .25s linear;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    z-index: 1000;
+    -moz-transition: width .25s linear;
+    -ms-transition: width .25s linear;
+    -o-transition: width .25s linear;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+}
+
+
+.main-menu>ul {
+    margin: 10px 0;
+}
+
+.main-menu li {
+    position: relative;
+    display: block;
+    width: 250px;
+}
+
+.main-menu li>a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #000000;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+    outline: 0;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.main-menu .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 16px;
+}
+
+.main-menu>ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+nav ul,
+nav li {
+    outline: 0;
+    margin: 10px;
+    padding: 0;
+}
+
+.main-menu li:hover>a
+ {
+    color: #fff;
+    background-color: #00000000;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 0px 20px;
+    background-color: #000000;
+    height: 36px;
+}
+
+.sidebar {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 8.5px 10px;
+}
+
+ul,
+li,
+a:hover {}
+
+.Name {
+    margin-bottom: 0px;
+    line-height: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.email {
+    padding-top: 0;
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+.item {
+    vertical-align: middle;
+    height: 36px;
+    margin: 0px 19px;
+}
+
+.items {
+    display: inline-block;
+    height: 36px;
+    margin: 10px 0px;
+}

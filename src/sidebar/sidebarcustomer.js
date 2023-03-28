@@ -1,8 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./sidebarcashier.js";
+import "./Sidebarcashier.js";
 
-function sidebarcustomer() {
+function Sidebarcustomer() {
   return (
     <div class="sidebar">
       <nav class="main-menu">
@@ -54,4 +54,4 @@ function sidebarcustomer() {
     </div>
   );
 }
-export default sidebarcustomer;
+export default Sidebarcustomer;
